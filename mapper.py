@@ -15,6 +15,6 @@ for line in sys.stdin:
         if char.isalpha():
             word += char
         elif word != '':
-            print('%s\t%s' % (word, 1))
+            print('%s\t%s' % (word.lower(), 1))
             word = ''
         
